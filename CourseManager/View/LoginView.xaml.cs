@@ -19,9 +19,28 @@ namespace CourseManager.View
     /// </summary>
     public partial class Login : Window
     {
+        private String UserName;
+        private String Password;
         public Login()
         {
             InitializeComponent();
         }
+        private String GetUserName() {
+            this.
+            return this.UserName;
+        }
+        private String GetPassword() {
+            return this.Password;
+        }
+        private void CloseLogin(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Log_in(object sender, RoutedEventArgs e)
+        {
+            System.Console.WriteLine("登录检查!");
+        }
+        // 移动登录窗口
     }
 }

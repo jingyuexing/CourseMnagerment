@@ -24,5 +24,18 @@ namespace CourseManager.View
         {
             InitializeComponent();
         }
+
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        private void MaxWindow()
+        {
+            // this.MaxWindow();
+        }
+        private void MinWindw()
+        {
+            // this.MinWindw()
+        }
     }
 }
