@@ -4,6 +4,5 @@
              xmlns:local="clr-namespace:CourseManager"
              StartupUri="View/MainView.xaml">
   <Application.Resources>
-  
   </Application.Resources>
 </Application>

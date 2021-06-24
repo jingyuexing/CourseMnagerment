@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseManager.View"
+        xmlns:common="clr-namespace:CourseManager.Comment"
         mc:Ignorable="d"
         Title="登录" 
         Height="600" 
@@ -223,9 +224,14 @@
                          Text="{Binding Login.Username}"
              >
                 </TextBox>
-                <PasswordBox Grid.Row="1"
-                             x:Name="password"
-                         Height="40" Style="{DynamicResource PasswordBoxStyle}" Password=""
+                <PasswordBox
+                  Grid.Row="1"
+                  x:Name="password"
+                  Height="40"
+                  Style="{DynamicResource PasswordBoxStyle}"
+                  Password=""
+                  common:PasswordHelper.Attach="True"
+                  common:PasswordHelper.Password="{Binding Login.Password}"
                          ></PasswordBox>
                 <Button Content="登    录" 
                         Grid.Row="2"

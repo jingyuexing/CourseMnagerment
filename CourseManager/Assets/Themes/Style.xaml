@@ -101,6 +101,9 @@
             <Trigger Property="IsChecked" Value="True">
               <Setter TargetName="Navbutton" Property="Background" Value="Aqua"></Setter>
             </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter TargetName="Navbutton" Property="Foreground" Value="#919191c7"></Setter>
+            </Trigger>
           </ControlTemplate.Triggers>
         </ControlTemplate>
       </Setter.Value>

@@ -20,7 +20,7 @@ namespace CourseManager.View
     public partial class Login : Window
     {
         private String UserName;
-        private String Password;
+        public String Password;
         public Login()
         {
             InitializeComponent();

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseManager"
+        xmlns:common="clr-namespace:CourseManager.Comment"
         Title="图书管理系统"
         Height="800"
         Width="1256"
@@ -39,7 +40,7 @@
             <Grid Margin="50,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="90"/>
-                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="46"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <StackPanel
@@ -52,7 +53,7 @@
                           Foreground="White"
                           FontSize="40"/>
                         <TextBlock
-                          Text="Book Managerment System"
+                          Text="Books Managerment System"
                           Foreground="#88DDDDDD"
                           FontSize="20"/>
                     </StackPanel>
