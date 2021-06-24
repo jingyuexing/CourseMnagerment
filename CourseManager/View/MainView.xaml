@@ -21,21 +21,29 @@
 		<Border.Effect>
 			<DropShadowEffect Color="#FF919191" ShadowDepth="0" BlurRadius="10"/>
 		</Border.Effect>
-		<Grid>
-			<Border
+    <Grid>
+      <Border
                 Background="#007dfa"
                 Height="40"
                 VerticalAlignment="Top"
                 CornerRadius="10,10,0,0">
-				<!--窗口控制按钮 -->
-				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-					<Button Template="{StaticResource ControlMaxmiButtonStyle}"/>
-					<Button Template="{StaticResource ControlMimniButtonStyle}"/>
-					<Button Template="{StaticResource CloseButtonStyle}"
+        <!--窗口控制按钮 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+          <Button Template="{StaticResource ControlMaxmiButtonStyle}"/>
+          <Button Template="{StaticResource ControlMimniButtonStyle}"/>
+          <Button Template="{StaticResource CloseButtonStyle}"
 							Click="CloseWindow"/>
-				</StackPanel>
-			</Border>
-		</Grid>
-
-	</Border>
+        </StackPanel>
+      </Border>
+      <Grid Width="100" Height="100">
+        <!--<Button
+          Style="{DynamicResource ControlManagerButtonStyle}"
+          Content="你好啊"
+          Width="100"
+          Height="40"
+          Foreground="#FF575757"/>
+        -->
+      </Grid>
+    </Grid>
+  </Border>
 </Window>

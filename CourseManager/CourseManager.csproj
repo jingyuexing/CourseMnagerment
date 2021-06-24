@@ -73,6 +73,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controller\Reader.cs" />
+    <Compile Include="Model\BookModel.cs" />
+    <Compile Include="Model\BorrowModel.cs" />
+    <Compile Include="Model\IDAL.cs" />
+    <Compile Include="Model\ReaderModel.cs" />
+    <Compile Include="Model\ReaderTypeModel.cs" />
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
@@ -113,8 +119,13 @@
   <ItemGroup>
     <Folder Include="Assets\Images\" />
     <Folder Include="Comment\" />
-    <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Book.sql" />
+    <Content Include="Data\Borrow.sql" />
+    <Content Include="Data\Reader.sql" />
+    <Content Include="Data\ReadType.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" />

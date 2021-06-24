@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +26,6 @@ namespace CourseManager.View
             InitializeComponent();
         }
         private String GetUserName() {
-            this.
             return this.UserName;
         }
         private String GetPassword() {
@@ -41,6 +40,11 @@ namespace CourseManager.View
         {
             System.Console.WriteLine("登录检查!");
         }
+        private string getUserName() {
+            /*System.Console.WriteLine(this.Resources.);*/
+            return 
+        }
         // 移动登录窗口
+
     }
 }

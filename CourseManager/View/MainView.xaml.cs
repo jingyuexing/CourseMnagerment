@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +23,7 @@ namespace CourseManager.View
         public MainView()
         {
             InitializeComponent();
+            Object FE = this.FindName("");
         }
 
         private void CloseWindow(object sender, RoutedEventArgs e)
@@ -37,5 +38,6 @@ namespace CourseManager.View
         {
             // this.MinWindw()
         }
+
     }
 }
