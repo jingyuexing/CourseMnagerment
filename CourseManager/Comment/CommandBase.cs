@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 namespace CourseManager.Comment
 {
-    class CommentBase : ICommand
+    public class CommentBase : ICommand
     {
         public event EventHandler CanExecuteChanged;
 

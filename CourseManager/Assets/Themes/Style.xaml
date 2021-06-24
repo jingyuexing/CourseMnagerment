@@ -87,10 +87,10 @@
         <ControlTemplate TargetType="RadioButton">
           <Border
             Background="Transparent"
+            Name="Navbutton"
             CornerRadius="10">
             <ContentControl
               Content="{TemplateBinding Content}"
-              Name="Navbutton"
               VerticalAlignment="Center"
               HorizontalAlignment="Center"
               Margin="20,4,20,4"
@@ -99,10 +99,7 @@
           </Border>
           <ControlTemplate.Triggers>
             <Trigger Property="IsChecked" Value="True">
-              <Setter TargetName="Navbutton" Property="Background" Value="Aqua"></Setter>
-            </Trigger>
-            <Trigger Property="IsEnabled" Value="False">
-              <Setter TargetName="Navbutton" Property="Foreground" Value="#919191c7"></Setter>
+              <Setter TargetName="Navbutton" Property="Background" Value="#3dffffff"></Setter>
             </Trigger>
           </ControlTemplate.Triggers>
         </ControlTemplate>

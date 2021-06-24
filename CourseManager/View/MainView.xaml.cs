@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using CourseManager.Comment;
 namespace CourseManager.View
 {
     /// <summary>
@@ -25,20 +25,6 @@ namespace CourseManager.View
             InitializeComponent();
             Object FE = this.FindName("");
         }
-
-        private void CloseWindow(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-        private void MaxWindow()
-        {
-            // this.MaxWindow();
-        }
-        private void MinWindw()
-        {
-            // this.MinWindw()
-        }
-
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             
@@ -46,6 +32,16 @@ namespace CourseManager.View
             {
                 this.DragMove();
             }
+        }
+        public CommentBase NavChangeCommand { get; set; }
+        private FrameworkElement _mainContent;
+        public FrameworkElement MainContent
+        {
+            get { return _mainContent; }
+            set {
+                _mainContent = value;
+                this.DoNotify();
+             }
         }
     }
 }

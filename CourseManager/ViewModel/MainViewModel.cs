@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseManager.Controller
+namespace CourseManager.ViewModel
 {
-    class Reader{
+    class MainViewModel{
+
     }
 }

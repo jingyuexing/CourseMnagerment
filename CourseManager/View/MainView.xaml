@@ -17,7 +17,7 @@
     <ResourceDictionary Source="../Assets/Themes/Style.xaml"/>
   </Window.Resources>
     <Border
-       Background="Wheat"
+       Background="White"
        CornerRadius="10"
        Margin="10"
        MouseLeftButtonDown="Border_MouseLeftButtonDown">
@@ -76,13 +76,14 @@
                   <TextBlock/>
                 </StackPanel>
               </StackPanel>
-                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
           <RadioButton Content="图书" Style="{StaticResource NavButtonStyle}"/>
           <RadioButton Content="读者" Style="{StaticResource NavButtonStyle}"/>
           <RadioButton Content="借阅" Style="{StaticResource NavButtonStyle}"/>
           <RadioButton Content="账号" Style="{StaticResource NavButtonStyle}"/>
         </StackPanel>
-            </Grid>
+        <ContentControl Grid.Row="2" Content="{Binding MainContent}"/>
+      </Grid>
         </Grid>
     </Border>
 </Window>

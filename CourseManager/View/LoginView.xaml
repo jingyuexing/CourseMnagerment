@@ -76,8 +76,10 @@
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
                                 <TextBlock 
-                                    FontFamily="../Assets/Font/#icon"
-                                    Text="User"
+                                    FontFamily="../Assets/Font/#iconfont"
+                                    Text="&#xe63a;"
+                                    FontSize="15"
+                                    Foreground="#dadde0"
                                     VerticalAlignment="Center"
                                     HorizontalAlignment="Right" Margin="0,12,16,12.4"></TextBlock>
                                 <ScrollViewer 
@@ -141,8 +143,10 @@
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
                                 <TextBlock 
-                                    Text="Pass"
-                                    FontFamily="../Assets/Font/#icon"
+                                    Text="&#xe653;"
+                                    FontSize="15"
+                                    Foreground="#dadde0"
+                                    FontFamily="../Assets/Font/#iconfont"
                                     VerticalAlignment="Center"
                                     HorizontalAlignment="Center"></TextBlock>
                                 <ScrollViewer 
@@ -221,8 +225,7 @@
                 <TextBox Grid.Row="0"
                          Height="40"
                          Style="{DynamicResource TextBoxUserNameStyle}"
-                         Text="{Binding Login.Username}"
-             >
+                         Text="{Binding Login.Username}">
                 </TextBox>
                 <PasswordBox
                   Grid.Row="1"
