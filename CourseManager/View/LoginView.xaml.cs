@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using CourseManager.ViewModel;
 namespace CourseManager.View
 {
     /// <summary>
@@ -24,25 +24,15 @@ namespace CourseManager.View
         public Login()
         {
             InitializeComponent();
-        }
-        private String GetUserName() {
-            return this.UserName;
-        }
-        private String GetPassword() {
-            return this.Password;
-        }
-        private void CloseLogin(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+            this.DataContext = new LoginViewModel();
         }
 
-        private void Log_in(object sender, RoutedEventArgs e)
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            System.Console.WriteLine("登录检查!");
-        }
-        private string getUserName() {
-            /*System.Console.WriteLine(this.Resources.);*/
-            return 
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
         }
         // 移动登录窗口
 

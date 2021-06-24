@@ -73,12 +73,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Comment\CommandBase.cs" />
+    <Compile Include="Comment\PasswordHelper.cs" />
     <Compile Include="Controller\Reader.cs" />
     <Compile Include="Model\BookModel.cs" />
     <Compile Include="Model\BorrowModel.cs" />
+    <Compile Include="Model\LoginModel.cs" />
     <Compile Include="Model\IDAL.cs" />
+    <Compile Include="Comment\LoginModelNotify.cs" />
     <Compile Include="Model\ReaderModel.cs" />
     <Compile Include="Model\ReaderTypeModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
@@ -118,8 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Images\" />
-    <Folder Include="Comment\" />
-    <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Book.sql" />

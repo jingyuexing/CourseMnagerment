@@ -8,6 +8,7 @@
         Title="登录" 
         Height="600" 
         Width="360"
+        Name="LoginWindow"
         FontFamily="Microsoft YaHei"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -17,8 +18,8 @@
     <Window.Resources>
         <ControlTemplate x:Key="CloseButton">
             <Border 
-				Background="Transparent" 
-				Name="bg">
+        Background="Transparent"
+        Name="bg">
                 <Path
                     Data="M0,0 30 30M0 30 30 0"
                     Stroke="White"
@@ -196,14 +197,17 @@
             </Grid.RowDefinitions>
             <Border
                 Background="#007dfa" 
-                CornerRadius="10,10,0,0"/>
+                CornerRadius="10,10,0,0"
+              MouseLeftButtonDown="Border_MouseLeftButtonDown"/>
             <Button
                 VerticalAlignment="Top" 
                 HorizontalAlignment="Right"
                 Width="30"
                 Height="30"
                 Margin="10"
-                Template="{StaticResource CloseButton}" Click="CloseLogin"/>
+                Template="{StaticResource CloseButton}"
+                Command="{Binding CloseWindowCommand}"
+                CommandParameter="{Binding ElementName=LoginWindow}"/>
             <Grid
                 Grid.Row="1"
                 Margin="20, 20">
@@ -215,9 +219,9 @@
                 </Grid.RowDefinitions>
                 <TextBox Grid.Row="0"
                          Height="40"
-                         x:Name="UserName"
-                         Style="{DynamicResource TextBoxUserNameStyle}" Text="{Binding ElementName=UserName, Path=DataContext}"
-						 >
+                         Style="{DynamicResource TextBoxUserNameStyle}"
+                         Text="{Binding Login.Username}"
+             >
                 </TextBox>
                 <PasswordBox Grid.Row="1"
                              x:Name="password"
@@ -226,7 +230,7 @@
                 <Button Content="登    录" 
                         Grid.Row="2"
                         Foreground="White"
-                        Template="{StaticResource LoginButton}" Click="Log_in">
+                        Template="{StaticResource LoginButton}">
                 </Button>
                 <TextBlock Text="登录失败" 
                            Foreground="Red" 
