@@ -39,11 +39,12 @@
                 CornerRadius="8"
                 Height="60"
                 >
-                <ContentControl Content="{TemplateBinding Content}"
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Center"
-                                Foreground="{TemplateBinding Foreground}"
-                                FontSize="33">
+                <ContentControl
+                  Content="{TemplateBinding Content}"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Center"
+                  Foreground="{TemplateBinding Foreground}"
+                  FontSize="33">
                 </ContentControl>
             </Border>
         </ControlTemplate>

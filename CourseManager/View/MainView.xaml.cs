@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CourseManager.Comment;
+using CourseManager.ViewModel;
 namespace CourseManager.View
 {
     /// <summary>
@@ -23,7 +24,9 @@ namespace CourseManager.View
         public MainView()
         {
             InitializeComponent();
-            Object FE = this.FindName("");
+            MainViewModel model = new MainViewModel();
+            //model.ReadInfor.Name = "Admin";
+            this.DataContext = model;
         }
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -40,7 +43,6 @@ namespace CourseManager.View
             get { return _mainContent; }
             set {
                 _mainContent = value;
-                this.DoNotify();
              }
         }
     }

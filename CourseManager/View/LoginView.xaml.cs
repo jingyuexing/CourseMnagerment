@@ -19,12 +19,13 @@ namespace CourseManager.View
     /// </summary>
     public partial class Login : Window
     {
-        private String UserName;
-        public String Password;
         public Login()
         {
             InitializeComponent();
-            this.DataContext = new LoginViewModel();
+            MainViewModel model = new MainViewModel();
+            this.DataContext = model;
+            model.ReadInfor.Email = "test";
+            model.ReadInfor.Name = "Admin";
         }
 
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

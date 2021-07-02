@@ -61,8 +61,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ReaderTypeManagerViewModel.cs" />
     <Compile Include="View\AddBook.xaml.cs">
       <DependentUpon>AddBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReaderTypeManagerView.xaml.cs">
+      <DependentUpon>ReaderTypeManagerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReaderView.xaml.cs">
+      <DependentUpon>ReaderView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ReaderManagerView.xaml.cs">
       <DependentUpon>ReaderManagerView.xaml</DependentUpon>
@@ -112,6 +119,14 @@
       <DependentUpon>MainView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\ReaderTypeManagerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReaderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ReaderManagerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

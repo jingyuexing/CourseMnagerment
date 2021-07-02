@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CourseManager.Comment;
 namespace CourseManager.Model
 {
-    class ReaderModel : LoginModelNotify{
+    public class ReaderModel : LoginModelNotify{
         /**
          * 读者编号/借书证号
          */
@@ -43,7 +43,7 @@ namespace CourseManager.Model
         private int _borrowQty;
         private string _pwd;
         private int _adminroles;
-        ReaderModel()
+        public ReaderModel()
         {
 
         }
@@ -71,6 +71,26 @@ namespace CourseManager.Model
         public string Email{
             get{return _email;}
             set{_email = value;this.DoNotify();}
+        }
+        public string Photo{
+            get{return _phone;}
+            set{_phone = value;this.DoNotify();}
+        }
+        public char[] Status{
+            get{return _status;}
+            set{_status = value;this.DoNotify();}
+        }
+        public int BorrowQty{
+            get{return _borrowQty;}
+            set{_borrowQty = value;this.DoNotify();}
+        }
+        public string Pwd{
+            get{return _pwd;}
+            set{_pwd = value;this.DoNotify();}
+        }
+        public int Adminroles{
+            get{return _adminroles;}
+            set{_adminroles = value;this.DoNotify();}
         }
     }
 }
